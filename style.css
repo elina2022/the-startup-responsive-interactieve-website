@@ -652,12 +652,13 @@ h1{
     text-align: right;
     background-color: var(--pink);
     padding: .3rem 6rem .4rem 1rem;
-    /* margin-right: -.5rem; */
     margin-left: auto;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     width: fit-content;
-    border-radius: 1rem/5rem ;
+    border-radius: 1rem/5rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
     font-size: 1rem;
     font-weight: 500;
 }

@@ -13,6 +13,7 @@ mix-blend-mode: difference; */
     --grey-dark: #787C82;
     --white: white;
 
+    --text-color-opacity: hsl(309, 8%, 16%); 
     --grey-light-opacity-btn-less: rgba(249, 247, 246, .4);
     --grey-light-opacity-btn-more: rgba(249, 247, 246, .6);
     --grey-light-opacity-less-bg: rgb(249, 247, 246, 0.2);
@@ -31,7 +32,7 @@ mix-blend-mode: difference; */
     --box-shadow: 1px 1px 3px 0px var(--text-color);
     --box-shadow-small: 1px 1px 4px -1px var(--text-color);
     --text-shadow: 1px 1px 7px var(--text-shadow-color);
-    --text-shadow-color: rgba(0, 0, 0, 0.3);
+    --text-shadow-color: rgba(0, 0, 0, 0.2);
     --border-big: .1rem solid var(--grey-dark);
     --border-small: .1rem solid var(--text-color);
 
@@ -61,6 +62,7 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
+    text-shadow: var(--text-shadow);
 }
 
 .button{
@@ -68,8 +70,9 @@ body{
     border: var(--border-small);
     border-radius: 1rem/2rem;
     font-size: .9rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-small);
     background-color: var(--grey-light);
+    color: var(--text-color);
 }
 
 .container-space-between{
@@ -93,7 +96,10 @@ body{
 }
 
 #image-header{
-    object-position: -20.5rem 0rem;
+    width: 100vw;
+    object-position: -15rem 0rem;
+    object-fit: cover;
+    /* object-position: -20.5rem 0rem; */
 }
 
 #overlay-image-header{
@@ -277,7 +283,6 @@ h1{
     padding-bottom: .3rem;
     border-bottom: .1rem solid;
     border-image: var(--gradient-non-webkit);
-    text-shadow: var(--text-shadow);
 }
 
 #arrow-lets-talk{

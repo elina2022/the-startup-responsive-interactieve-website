@@ -1,6 +1,6 @@
 /* color: white;
-mix-blend-mode: difference; */
-/* backdrop-filter: invert */
+mix-blend-mode: difference;
+backdrop-filter: invert */
 
 :root{
     --text-color: #2d262c; 
@@ -108,7 +108,11 @@ body{
 }
 
 #logo{
-    margin-top: 4rem;
+    top: 1.5rem;
+    margin-left: -1vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.1rem;
+    position: relative;
 }
 
 .name-quote{

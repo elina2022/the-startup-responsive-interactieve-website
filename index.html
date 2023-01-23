@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,54 +7,63 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
+
     <header>
-        <img id="image-header" src="assets/image-header.png" alt="">
-        <div id="overlay-image-header"></div>
-        <!-- <img id="logo" src="assets/fdnd-logo.png" alt=""> -->
         <small class="gradient" id="logo">FDND</small>
-        <div class="container-space-between name-quote">
-            <h1>Daniel <br> Lothario</h1>
-            <h2 id="quote-header">Creative <br> developer and <br> <span class="gradient">web design.</span></h2>
-        </div>
-        <ul id="container-list-header">
-            <li class="header-icon-text"> <img class="icon-header" src="assets/location.svg" alt="" width="15px"> <br class="icon-header-br"> Lyon, France</li>
-            <li class="header-icon-text"> <img class="icon-header" src="assets/speech-bubble.svg" alt="" width="15px"> <br class="icon-header-br"> French, English</li>
-            <li class="header-icon-text"> <img class="icon-header" src="assets/star.svg" alt="" width="15px"> <br class="icon-header-br"> Available for hire</li>
-        </ul>
-        <p id="p-header">
-            I am a fresh design and development graduate looking for an
-            opportunity to kickstart my career & face new challenges
-            within the field of frontend development.
-        </p>
-        <div class="container-space-between connect-bio">
-            <button class="button" id="connect-button-header">Connect with me</button>
-            <a id="view-full-bio" href="">View full bio →</a>
+        <div id="header-container-with-quote">
+
+            <div id="header-container-without-quote">
+                <div class="container-space-between name-image">
+                    <h1>Daniel <br> Lothario</h1>
+                    <img id="image-header" src="assets/image-biography.jpg" alt=""> 
+                </div>
+                <ul id="container-list-header">
+                    <li class="header-icon-text"> <img class="icon-header" src="assets/location.svg" alt="" width="15px"> <br class="icon-header-br"> Lyon, France</li>
+                    <li class="header-icon-text"> <img class="icon-header" src="assets/speech-bubble.svg" alt="" width="15px"> <br class="icon-header-br"> French, English</li>
+                    <li class="header-icon-text"> <img class="icon-header" src="assets/star.svg" alt="" width="15px"> <br class="icon-header-br"> Available for hire</li>
+                </ul>
+                <h2 id="quote-header">Creative developer and <br id="br-quote-header"> <span class="gradient">web design.</span></h2>
+                <p id="p-header">
+                    I am a fresh design and development graduate looking for an
+                    opportunity to kickstart my career & face new challenges
+                    within the field of frontend development.
+                </p>
+                <div class="container-space-between connect-bio">
+                    <button class="button" id="connect-button-header">Connect with me</button>
+                    <a id="view-full-bio" href="">View full bio →</a>
+                </div>
+            </div>
+            
+            <h2 id="quote-header-desktop">Creative <br class="br-quote-header-desktop"> developer <br class="br-quote-header-desktop"> and <br id="br-quote-header"> <span class="gradient">web <br class="br-quote-header-desktop"> design.</span></h2>
+        
         </div>
     </header>
+
+
+    <main>
+
     <section>
         <div id="background-all-projects">
             <h2 id="all-projects">All projects</h2>
-            <div class="container-projects">
-                <small class="name-project">Zesty</small>
-                <small class="views-project"><img class="eye-project" src="assets/eye.svg" alt="" width="15px">
-                    109</small>
-                <img class="image-project" src="assets/project-1.png" alt="project-1">
-            </div>
+            <div id="container-all-projects">
+                <div class="container-projects">
+                    <small class="name-project">Zesty</small>
+                    <small class="views-project"><img class="eye-project" src="assets/eye.svg" alt="" width="15px">
+                        109</small>
+                        <img class="image-project" src="assets/project-1.png" alt="project-1">
+                    </div>
             <div class="container-projects">
                 <small class="name-project">Anti pop</small>
                 <small class="views-project"><img class="eye-project" src="assets/eye.svg" alt="" width="15px">
                     456</small>
-                <img class="image-project" src="assets/project-2.png" alt="project-2">
-            </div>
-            <div class="container-projects">
+                    <img class="image-project" src="assets/project-2.png" alt="project-2">
+                </div>
+                <div class="container-projects">
                 <small class="name-project">Heritage museum</small>
                 <small class="views-project"><img class="eye-project" src="assets/eye.svg" alt="" width="15px">
                     230</small>
@@ -65,47 +73,65 @@
                 <small class="name-project">Feminina</small>
                 <small class="views-project"><img class="eye-project" src="assets/eye.svg" alt="" width="15px">
                     374</small>
-                <img class="image-project" src="assets/project-4.png" alt="project-4">
+                    <img class="image-project" src="assets/project-4.png" alt="project-4">
+                </div>
             </div>
-            <div id="container-button-lets-talk">
-                <button class="button" id="load-more-button">Load more <span id="load-more-count">04</span></button>
-                <p id="got-a-project">Got a project? <br><a class="gradient" id="lets-talk" href="">Let's talk →</a></p>
+                <div id="container-button-lets-talk">
+                    <button class="button" id="load-more-button">Load more <span id="load-more-count">04</span></button>
+                    <p id="got-a-project">Got a project? <br><a class="gradient" id="lets-talk" href="">Let's talk →</a></p>
+                </div>
             </div>
-        </div>
     </section>
+
+
     <section id="section-biography">
-        <div id="container-bio">
-            <h3 class="biography-title" id="bio">Biography</h3>
-            <p id="bio-text">
+        <div id="container-all-biography-items">
+
+
+            <div id="container-bio">
+                <h3 class="biography-title" id="bio">Biography</h3>
+                <p id="bio-text">
                 I am a recent graduate in development and web design. Throughout my studies, I have gained a strong
                 foundation in a variety of programming languages and technologies, including HTML, CSS, JavaScript,
                 React, and Angular. I also learned about user experience (UX) design and project management, which have
                 helped me to develop well-designed and functional web applications.
             </p>
         </div>
+        
         <div id="container-coding">
+            <img id="person-sitting" src="assets/svg-person-sitting.svg" alt="">
             <div id="container-coding-no-image">
                 <h3 class="biography-title" id="coding">Coding education</h3>
                 <p id="coding-text">
-                    Ad Frontend <br> Design & Development <br> Graduated June, 2024
+                    Ad Frontend <br class="br-coding-text"> Design & Development <br class="br-coding-text"> Graduated June, 2024
                 </p>
             </div>
             <div id="container-image-resume-button">
+            <img id="person-sitting-desktop" src="assets/svg-person-sitting.svg" alt="">
                 <img id="image-biography" src="assets/image-biography.jpg" alt="">
                 <button class="button" id="download-resume-button">Download resume</button>
             </div>
         </div>
+        
         <div id="container-skills">
             <h3 class="biography-title" id="skills">Additional skills</h3>
-            <p>
             <ul id="skills-text">
                 <li>In addition to my coursework, I have also had the opportunity to work on a number of real-world
                     projects. I am excited to continue learning and growing as a developer and designer.</li>
                 <li>I am excited to contiune learning and growing as a developer and designer.</li>
             </ul>
-            </p>
+        </div>
+
+
+        </div>
+
+        <div id="container-image-resume-button-desktop">
+            <img id="image-biography" src="assets/image-biography.jpg" alt="">
+            <button class="button" id="download-resume-button-desktop">Download resume</button>
         </div>
     </section>
+
+
     <section id="section-tech-stack">
         <div id="container-header-tech-stack">
             <h2 id="tech-stack">Tech <span id="stack-span" class="gradient">Stack</span></h2>
@@ -132,14 +158,12 @@
     </section>
     <section id="section-feedback">
         <h2 id="feedback-title">What <span class="gradient" id="others">others</span> think
-            <img class="speech-bubble-triangle-title" src="assets/triangle.svg" alt="" width="100px">
         </h2>
         <p id="feedback-text">
             Danielle has a strong foundation in a variety of programming languages and is able to translate technical
             concepts into clear and functional code. I highly recommend Danielle for any web development project.
             <small id="feedback-name">Chris Roomies <br><span id="social-media-influencer">Social Media
                     influencer</span></small>
-            <img class="speech-bubble-triangle-text" src="assets/triangle.svg" alt="" width="100px">
         </p>
         <div id="image-and-speech-bubble">
             <img id="image-person-feedback" src="assets/svg-person-feedback.svg" alt="">
@@ -173,23 +197,22 @@
             <img id="arrow-curved" src="assets/arrow-curved.svg" alt="" width="20px">
         </h2>
         <h3 class="question">What is your process?</h3>
-        <!-- <p class="answer"></p> -->
         <hr class="hr-questions">
         <h3 class="question">What is your availability?</h3>
         <p class="answer">I'm currently available and would be happy to help with any questions or requests you have.
             Feel free to reach out!</p>
         <hr class="hr-questions">
         <h3 class="question">What is the turnaround time?</h3>
-        <!-- <p class="answer"></p> -->
         <hr class="hr-questions">
     </section>
+    </main>
     <footer>
         <div id="name-image">
             <p id="name-footer">Daniel Lothario</p>
             <img id="image-footer" src="assets/image-biography.jpg" alt="">
         </div>
         <div id="footer-container">
-            <p id="quote-footer">Creative developer <br> and <span class="gradient">web design.</p>
+            <p id="quote-footer">Creative developer <br> and <span class="gradient">web design.</span></p>
             <p id="available-for-hire">Available for hire</p>
             <button id="connect-button-footer" class="button">Connect with me</button>
         </div>

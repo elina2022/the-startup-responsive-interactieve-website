@@ -722,6 +722,10 @@ h1{
         display: none;
     }
 
+    #br-coding-text-desktop{
+        display: block;
+    }
+
     #bio, #skills, #coding{
         display: inline-block;
         padding: 0rem 0rem .1rem 15vw;
@@ -772,16 +776,14 @@ h1{
     }
 
     #person-sitting{
-        position: absolute;
-        top: -6.25rem;
-        left: 1.5rem;
         display: none;
     }
 
     #person-sitting-desktop{
-        position: absolute;
-        top: -6.25rem;
-        left: 1.5rem;
+        position: relative;
+        /* top: -6.25rem; */
+        /* left: 1.5rem; */
+        display: inline;
     }
 
     #container-coding-no-image{
@@ -818,6 +820,11 @@ h1{
     }
 }
 
+@media(min-width: 900px){
+    #br-coding-text-desktop{
+        display: none;
+    }
+}
 
 @media(min-width: 1000px){
     #container-all-biography-items{

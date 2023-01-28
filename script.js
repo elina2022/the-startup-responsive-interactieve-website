@@ -6,6 +6,8 @@ let loadMoreCount = $("#load-more-count")
 let loadMoreText = $("#load-more-text")
 let projects = $all(".project-load-more")
 let containerButtonAndLetsTalk = $("#container-button-lets-talk")
+let plus = $all(".question-plus")
+let minus = $all(".question-minus")
 
 loadMore.addEventListener("click", ()=>{
     for(i=0; i<projects.length; i++) projects[i].classList.toggle("project-load-more-height")
@@ -26,7 +28,11 @@ for(let i=0; i<answers.length; i++){
     //     for(let j=0; j<answers.length; j++){
     //         answers[j].style.display = "none"
     //     }
-    // answers[i].style.maxHeight = (answers[i].style.maxHeight != "4rem") ? "4rem" : "0rem"    
+    // answers[i].style.maxHeight = (answers[i].style.maxHeight != "4rem") ? "4rem" : "0rem"
+    for(j=0; j<plus.length; j++){
+        plus[j].style.display = (plus[j].style.display != "none") ? "none" : "block"
+        minus[j].style.display = (minus[j].style.display != "block") ? "block" : "none"
+    }
     answers[i].classList.toggle("answer-show")
     hr[i].style.opacity = (hr[i].style.opacity != "1") ? "1" : ".7"    
     questions[i].style.opacity = (questions[i].style.opacity != "1") ? "1" : ".7"    

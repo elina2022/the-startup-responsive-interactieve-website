@@ -29,10 +29,10 @@ for(let i=0; i<answers.length; i++){
     //         answers[j].style.display = "none"
     //     }
     // answers[i].style.maxHeight = (answers[i].style.maxHeight != "4rem") ? "4rem" : "0rem"
-    for(j=0; j<plus.length; j++){
-        plus[j].style.display = (plus[j].style.display != "none") ? "none" : "block"
-        minus[j].style.display = (minus[j].style.display != "block") ? "block" : "none"
-    }
+    // for(j=0; j<plus.length; j++){
+        plus[i].style.display = (plus[i].style.display != "none") ? "none" : "block"
+        minus[i].style.display = (minus[i].style.display != "block") ? "block" : "none"
+    // }
     answers[i].classList.toggle("answer-show")
     hr[i].style.opacity = (hr[i].style.opacity != "1") ? "1" : ".7"    
     questions[i].style.opacity = (questions[i].style.opacity != "1") ? "1" : ".7"    

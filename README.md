@@ -1,3 +1,11 @@
-https://www.figma.com/file/U9iMCRkH3Sl2tvS0J1gkhI/FDND---Assignment?t=c8rOoQwjM2rdgrfB-6
+# Titel
+Repository voor 'the startup responsive interactieve website'
 
-desktop eigen versie: https://www.figma.com/file/FivtD1kEIlvmNUVr4eVZ0Z/Monwest---Desktop-(big-picture)?t=c8rOoQwjM2rdgrfB-6
+
+
+## Links
+Live website: https://monwest-portfolio.student.fdnd.nl/
+
+
+## Beschrijving
+In deze repository staan een website die ik heb gemaakt voor het bedrijf "Monwest". 
